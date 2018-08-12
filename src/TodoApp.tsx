@@ -1,10 +1,12 @@
 import * as React from 'react';
 import Form from './components/Form';
+import TodoList from './components/TodoList';
 
-interface AppProps {};
+interface AppProps {}
+
 interface AppState {
   todos: string[];
-};
+}
 
 class TodoApp extends React.Component<AppProps, AppState> {
   constructor(props: AppProps) {
@@ -25,6 +27,7 @@ class TodoApp extends React.Component<AppProps, AppState> {
     return (
       <div>
         <Form onSubmit={this.onSubmit} />
+        <TodoList todos={this.state.todos} />
       </div>
     );
   }
