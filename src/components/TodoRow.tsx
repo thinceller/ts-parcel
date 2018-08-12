@@ -4,8 +4,12 @@ export interface TodoRowProps {
   todo: string;
 }
 
+
+
 export interface TodoRowState {
 }
+
+
 
 class TodoRow extends React.Component<TodoRowProps, TodoRowState> {
   constructor(props: TodoRowProps) {
