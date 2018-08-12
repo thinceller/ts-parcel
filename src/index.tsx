@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import App from './components/App';
+import TodoApp from './TodoApp';
 
 ReactDom.render(
-  <App content="Hello React!"/>,
+  <TodoApp />,
   document.getElementById('app')
 );
