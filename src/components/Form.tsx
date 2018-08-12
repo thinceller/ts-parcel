@@ -25,7 +25,7 @@ class Form extends React.Component<FormProps, FormState> {
   onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const { todo } = this.state;
-    this.props.onSubmit(todo);
+    if (todo !== '') this.props.onSubmit(todo);
     this.setState({ todo: '' });
   }
 
