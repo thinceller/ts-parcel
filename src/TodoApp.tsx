@@ -12,7 +12,7 @@ class TodoApp extends React.Component<AppProps, AppState> {
   constructor(props: AppProps) {
     super(props);
     this.state = {
-      todos: []
+      todos: [],
     };
     this.onSubmit = this.onSubmit.bind(this);
   }
@@ -31,6 +31,6 @@ class TodoApp extends React.Component<AppProps, AppState> {
       </div>
     );
   }
-};
+}
 
 export default TodoApp;

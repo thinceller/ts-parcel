@@ -12,7 +12,7 @@ class Form extends React.Component<FormProps, FormState> {
   constructor(props: FormProps) {
     super(props);
     this.state = {
-      todo: ''
+      todo: '',
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
