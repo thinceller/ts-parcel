@@ -12,7 +12,7 @@ class Form extends React.Component<FormProps, FormState> {
   constructor(props: FormProps) {
     super(props);
     this.state = {
-      todo: ''
+      todo: '',
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -25,7 +25,8 @@ class Form extends React.Component<FormProps, FormState> {
   onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const { todo } = this.state;
-    this.props.onSubmit(todo);
+    if (todo !== '') this.props.onSubmit(todo);
+    this.setState({ todo: '' });
   }
 
   render() {
