@@ -1,4 +1,4 @@
-# ts-parcel
+# ts-practice
 ## dev server
 `$ npm run dev`
 
